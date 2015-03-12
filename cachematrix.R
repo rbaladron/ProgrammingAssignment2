@@ -36,3 +36,14 @@ cacheSolve <- function(x, ...) {
   x$setInversa(m) 
   m 
 }
+# Test
+
+test <- matrix(runif(9,1,50),3,3)
+testCache <- makeCacheMatrix(test)
+
+testInversa <- cacheSolve(testCache)
+testInversa <- cacheSolve(testCache)
+testInversa <- cacheSolve(testCache)
+testInversa <- cacheSolve(testCache)
+testInversa <- cacheSolve(testCache)
+tetsinversa <- cacheSolve(testCache)
